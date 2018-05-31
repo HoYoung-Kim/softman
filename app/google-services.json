@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "240004215115",
+    "firebase_url": "https://softman-notification.firebaseio.com",
+    "project_id": "softman-notification",
+    "storage_bucket": "softman-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240004215115:android:4c556e16e67e3256",
+        "android_client_info": {
+          "package_name": "com.jerryfamily.mymuseumtrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240004215115-2jets7rqdm07pdfdsgs9rmrggfviaohj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jerryfamily.mymuseumtrip",
+            "certificate_hash": "4ac35b0342884745054a6baadbe6579977a2feb9"
+          }
+        },
+        {
+          "client_id": "240004215115-66bptqa0u97d7seuojiulcbu561h2cuq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "240004215115-66bptqa0u97d7seuojiulcbu561h2cuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSkHY0TidDRzgbcZTgmavgsSlsf8XzP2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240004215115-66bptqa0u97d7seuojiulcbu561h2cuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240004215115:android:1d421c55d7bd53bb",
+        "android_client_info": {
+          "package_name": "com.jerryfamily.mynotification2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240004215115-66bptqa0u97d7seuojiulcbu561h2cuq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "240004215115-66bptqa0u97d7seuojiulcbu561h2cuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSkHY0TidDRzgbcZTgmavgsSlsf8XzP2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

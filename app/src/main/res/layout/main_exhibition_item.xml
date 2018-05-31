@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/exhibition_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_weight="65"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:text="천 년의 먹 향기 '단산오옥'"
+        android:textSize="@dimen/fontsize_15"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/exhibition_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="35"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:text="04/24 ~ 06/17"
+        android:textSize="@dimen/fontsize_15" />
+</LinearLayout>

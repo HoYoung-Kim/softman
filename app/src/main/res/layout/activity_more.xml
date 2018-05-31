@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jerryfamily.mymuseumtrip.MoreActivity"
+    android:background="@color/colorGrey">
+
+    <!-- 상단 메뉴 들어가는 부분 -->
+    <include layout="@layout/toolbar" />
+
+    <!-- 서브 메뉴1-->
+    <TextView
+        android:id="@+id/textView_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLinearLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="App"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/firstLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView_display1"
+        android:background="@color/colorWhite"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/ic_action_version" />
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="45"
+        android:text="버전 정보"
+        android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="15"
+            android:text="1.0.0"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/ic_action_arrow_right" />
+    </LinearLayout>
+
+
+    <!-- 서브 메뉴2-->
+    <TextView
+        android:id="@+id/textView_display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLinearlayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Info"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/secondLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_display2"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <!-- 문의 건의-->
+        <LinearLayout
+            android:id="@+id/inquiryLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_inquiry" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="60"
+                android:text="@string/menu_inquiry_title"
+                android:textSize="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_arrow_right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="20" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="80"
+                android:background="@color/colorGreyDark" />
+        </LinearLayout>
+
+        <!-- 사용법-->
+        <LinearLayout
+            android:id="@+id/directionLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_direction" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="60"
+                android:text="@string/menu_direction_title"
+                android:textSize="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_arrow_right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="20" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="80"
+                android:background="@color/colorGreyDark" />
+        </LinearLayout>
+
+        <!-- 앱 추천-->
+        <LinearLayout
+            android:id="@+id/kakaoTalkLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_recommend" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="60"
+                android:text="@string/menu_app_recommend_title"
+                android:textSize="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_arrow_right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="20" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="80"
+                android:background="@color/colorGreyDark" />
+        </LinearLayout>
+
+        <!-- 프로젝트 문의-->
+        <LinearLayout
+            android:id="@+id/projectLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_project" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="60"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/menu_project_inquiry_title"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                app:srcCompat="@drawable/ic_action_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

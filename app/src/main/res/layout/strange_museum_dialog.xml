@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"/>
+
+        <TextView
+            android:id="@+id/s_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="해남 공룡 박물관"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/fontsize_20"
+            android:layout_weight="70"/>
+
+        <ImageView
+            android:id="@+id/imageView_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:src="@drawable/ic_action_remove" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="5"
+            android:src="@drawable/ic_action_content" />
+
+        <TextView
+            android:id="@+id/s_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="95"
+            android:text="수천만년전의 신비한 공룡의 자취가 생생하게 살아있는 해남공룡 박물관. \n\n화석지내 박물관 전시실에 알로사우로스 진품화석등 447점, 화석지야외에 35점의 공룡조형물, 야외전시관(조각류공룡관, 익룡·조류관, 대형초식공룡 발자국 보호각)에 조각류 공룡발자국 화석 263점, 물갈퀴새발자국 1,000여점, 익룡발자국 443점, 별마크 달린 대형초식공룡 발자국 110점 등이 전시."
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/fontsize_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGreyDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="5"
+            android:src="@drawable/ic_action_address"
+            android:contentDescription=""/>
+
+        <TextView
+            android:id="@+id/s_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:text="전남 해남군 황산면 공룡박물관 234"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/fontsize_15" />
+
+        <TextView
+            android:id="@+id/s_address_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="복 사"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteLight"
+            android:textSize="@dimen/fontsize_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGreyDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="5"
+            android:src="@drawable/ic_action_web"
+            android:contentDescription=""/>
+
+        <TextView
+            android:id="@+id/s_homepage_url"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:text="http://uhangridinopia.haenam.go.kr"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/fontsize_15" />
+
+        <TextView
+            android:id="@+id/s_homepage_url_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="보 기"
+            android:textSize="@dimen/fontsize_13"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteLight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGreyDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="5"
+            android:src="@drawable/ic_action_phone" />
+
+        <TextView
+            android:id="@+id/s_telephone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:text="061-0530-5324"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/fontsize_15" />
+
+        <TextView
+            android:id="@+id/s_telephone_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="전 화"
+            android:textSize="@dimen/fontsize_13"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteLight" />
+    </LinearLayout>
+
+</LinearLayout>

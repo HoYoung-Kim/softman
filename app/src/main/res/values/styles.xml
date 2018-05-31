@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 메인 툴바 글자 정의 -->
+    <style name="ToolbarText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- TabLayout style 정의 -->
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- 메인 텍스트뷰 글자 정의 (버전 1)-->
+    <style name="ImageViewText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhiteLight</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- 메인 텍스트뷰 글자 정의 (버전 2)-->
+    <style name="MainMuseumTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/colorWhiteLight</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 메인 텍스트뷰 글자 정의 (버전 2)-->
+    <style name="MainStrangeMuseumTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/colorBlackLight</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

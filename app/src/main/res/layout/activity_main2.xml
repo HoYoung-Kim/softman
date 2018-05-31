@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg2"
+    tools:context="com.jerryfamily.mymuseumtrip.Main2Activity">
+
+    <!-- 상단 메뉴 들어가는 부분 -->
+    <include layout="@layout/toolbar" />
+
+    <!-- 박물관 -->
+    <LinearLayout
+        android:id="@+id/museumlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_border_round"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_below="@+id/toolbarLinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="박물관"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="80"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_category1"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/m_shape_1"
+                        android:text="@string/category1_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category2"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_2"
+                        android:text="@string/category2_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category3"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_3"
+                        android:text="@string/category3_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category4"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_4"
+                        android:text="@string/category4_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category5"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_5"
+                        android:text="@string/category5_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category6"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_6"
+                        android:text="@string/category6_name"
+                        style="@style/MainMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_category7"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/m_shape_7"
+                        android:text="@string/category7_name"
+                        style="@style/MainMuseumTextView" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 이색 박물관 -->
+    <LinearLayout
+        android:id="@+id/strangemuseumlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_border_round"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_below="@+id/museumlinearlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="이색 박물관"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_strange_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="더보기"
+                android:textColor="@color/colorBlueLight"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="80"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_strange1"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/sm_shape_1"
+                        android:text="주필 거미\n박물관"
+                        style="@style/MainStrangeMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_strange2"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/sm_shape_2"
+                        android:text="재미난\n박물관"
+                        style="@style/MainStrangeMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_strange3"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/sm_shape_3"
+                        android:text="해남 공룡\n박물관"
+                        style="@style/MainStrangeMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_strange4"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/sm_shape_4"
+                        android:text="한국만화\n박물관"
+                        style="@style/MainStrangeMuseumTextView" />
+
+                    <TextView
+                        android:id="@+id/textView_strange5"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/sm_shape_5"
+                        android:gravity="center"
+                        android:text="한성 백제\n박물관"
+                        style="@style/MainStrangeMuseumTextView" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 전시회 정보 -->
+    <LinearLayout
+        android:id="@+id/exhibitionlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_border_round_white"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_below="@+id/strangemuseumlinearlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="전시회 정보"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_exhibition_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="더보기"
+                android:textColor="@color/colorBlueLight"
+                android:textSize="15dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="80"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/listView_exhibition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
